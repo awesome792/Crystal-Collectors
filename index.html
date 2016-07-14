@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Jquery! -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+<!-- Understood the importance of relative paths.-->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<title>Crystals Collector</title>
+
+<div class="header" style="background-color:brown">
+<nav class="navbar1">
+<h1>CrystalsCollector!</h1></nav></div><br>
+</head>
+
+<body>
+<!-- Wrapper entire content area is 960px wide. -->
+<div id="wrapper">
+
+<!-- Rules for game.  I finally understand how to use divs. I've placed all <p's> inside the "instructions div". I broke the <p> down like the crystal collector demo video.-->
+<div class="instructions" style="background-color: #FFFFFF;">
+<p>You will be given a randon number at the start of the game.</p>
+<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+<p>The value of each crystal is hidden from you until you
+click on it.</p><p>Each time when the game starts, the game will change 
+the values of each crystal.</p></div>
+<br>
+<!-- Scores. I placed the ".win-lose div inside the .random-number div. This allows me to position the divs next to each other. The random score generates 19-120. The win/lose needs to alert You Won! or You Lose! in javascript/jquery. -->
+
+<!-- Random Selector -->
+<div class="random-number" style="background-color: green"></div>
+
+<!-- Win/Lose tracker -->
+<div class="win-lose" style="background-color: #00ffff"><p class="win"><p>Win</p>
+<br><p class="lose"><p>Lose</p></div>
+	
+<br>
+
+<!-- Crystals! Nothing new here, other than placing the images inside the div. The crystals generates 1-12 points. -->
+<div class="crystals">
+<img class="pink" src="https://lh3.googleusercontent.com/diRLRKg1Q8n-m4BCUK-K46l_Y020-PHb8jRd4bboKtaT43k16Ioq-kWz4OXgiW8aTR2yLg=s85" width="60" height="60" id="1">
+<img class="blue" src="https://lh3.googleusercontent.com/bqkNIju7kIQtZXSZnx-Rl01GgVtviwtPmf03DfsE373YZ921pm10AHrrXHqSIrWWxmcBwNQ=s63" width="60" height="60" id="2">
+<img class="yellow" src="https://lh3.googleusercontent.com/zWwAR0_Sg-Uuh60mZflTGVadUW3slPeqIoY34hm0PBzQzoOiytXQ9Y-SzVwRjcK_ISNe=s69" width="50" height="60" id="3">
+<img class="green" src="https://lh3.googleusercontent.com/kBa7ei5_AOlcEhUnQyFmHmRMpp11-b1cQKfy2wu3YhmWjv07zvoBsPHmEeemcL5nVk8caBc=s73" width="60" height="60" id="4">
+
+</div>
+<br>
+
+<!-- GRAND TOTAL! -->
+<div id="total-score" style="background-color: #00cc66">Your total score is:</div><br>
+
+<!--Points from clicking the crystals!  -->
+<div id="score-count" style="background-color: #00cc66"></div><br>
+<script src='http://code.jquery.com/jquery-2.1.3.min.js'>
+		</script>
+		<script src="game.js.js"></script>
+<!-- Footer -->
+<div class="footer" style="background-color: white">&copy 2016 Copyright Angela Davis</div>
+</div>
+
+<!-- Jquery/Javascript -->
+<script src='http://code.jquery.com/jquery-2.1.3.min.js'>
+		</script>
+		<script src="game.js."></script>
+</body>
+</html>

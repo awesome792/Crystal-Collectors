@@ -1,0 +1,96 @@
+#wrapper{
+max-width: 960px;
+
+	}
+/*The background is close to the demo video. 
+I decided to do everything exactly like the demo video, 
+because I need to fully understand what the person/client/customer wants.*/
+
+html, body, head{
+	background-image: url(https://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-1-full.jpg);
+}
+/*Played around with the padding, border-radius. I'm starting to better 
+understand CSS.*/
+.header{
+	width: 300px;
+	height: 95px;
+	padding-top: 1px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	margin-left: 15px;
+
+	}
+
+.instructions{
+	width: 500px;
+	height: 390px;
+	color: green;
+	font-size: 20px;
+	padding-top: 10px;
+	border-radius: 10px;
+	margin-left: 15px;
+}
+
+.navbar1{
+	color: white;
+	font-size: 25px;
+
+}
+
+.random-number{
+	width: 110px;
+	height: 65px;
+	font-color: white;
+	font-size: 30px;
+	margin-left: 15px;
+	text-align: center;
+}
+
+.win-lose{
+	
+	width: 90px;
+	height: 110px;
+	font-color: white;
+	font-size: 11px;
+	margin-left: 300px;
+	margin-bottom: -100px;
+
+	}
+
+#total-score{
+	width: 200px;
+	height: 20px;
+	color: white;
+	margin-left: 15px;
+}
+
+#score-count{
+	width: 200px;
+	height: 100px;
+	padding-top: 5px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	margin-left: 15px;
+}
+
+.crystals{
+	margin-left: 15px;
+}
+/*The footer seemed to naturally position itself after using divs.
+ I always had issues with the footer, but not this time. If I need help with 
+ the footer, I'll apply https://www.youtube.com/watch?v=KxmLNctBi10 (sticky footer)*/
+.footer{
+	text-align: center;
+	width: 500px;
+	height: 50px;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	margin-left: 450px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font-size: 20px;
+	border-style: double;
+
+}
+
