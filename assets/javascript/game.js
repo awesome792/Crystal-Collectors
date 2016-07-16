@@ -65,11 +65,14 @@ function loser(){
 						//Sets win/lose conditions. If total equals line 3 "var random" this commands a win.
 					if (total == Random){
 						win();
+						reset();
 						
 						// Else if, means line 65-67 didn't happen and the user lost the game.  
 					}
 					else if ( total > Random){
 						loser();
+						reset();
+						
 					}		
 		})	
 					// #2 is my id for the second crystal picture. 'click' enables the user to click on the picture. 
@@ -81,9 +84,11 @@ function loser(){
 
 					if (total == Random){
 						win();
+						reset();
 					}
 					else if ( total > Random){
 						loser();
+						reset();
 					}	
 		})	
 
@@ -95,9 +100,11 @@ function loser(){
 	
 						if (total == Random){
 						win();
+						reset();
 					}
 					else if ( total > Random){
 						loser();
+						reset();
 					}	
 		})	
 
@@ -109,9 +116,13 @@ function loser(){
 				
 						if (total == Random){
 						win();
+						reset();
+
 					}
+
 					else if ( total > Random){
 						loser();
+						reset();
 					}
 		});  	
 
